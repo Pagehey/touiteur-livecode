@@ -1,0 +1,7 @@
+<!-- app/views/messages/index.html.erb -->
+<h1>Les messages :</h1>
+
+<% @messages.each do |message| %>
+	<p><%= message.content %></p>
+	<em><%= message.author %></em>
+<% end %>
